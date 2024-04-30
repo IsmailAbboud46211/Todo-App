@@ -95,17 +95,17 @@ class TodoTail extends StatelessWidget {
                           notificationID: todoModel.notificationID,
                         ),
                       );
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Text(
-                            "${todoModel.title}  ${LocaleKeys.done_message.tr()}",
-                            style: const TextStyle(
-                              color: Colors.white,
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: Text(
+                              "${todoModel.title}  ${LocaleKeys.done_message.tr()}",
+                              style: const TextStyle(
+                                color: Colors.white,
+                              ),
                             ),
+                            backgroundColor: AppColors.green,
                           ),
-                          backgroundColor: AppColors.green,
-                        ),
-                      );
+                        );
                     },
                     style: ButtonStyle(
                       backgroundColor: MaterialStateColor.resolveWith(
